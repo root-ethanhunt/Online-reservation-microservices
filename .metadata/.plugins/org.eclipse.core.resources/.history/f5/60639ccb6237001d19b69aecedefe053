@@ -1,0 +1,10 @@
+server.port= 9098
+spring.application.name=admin-service
+
+spring.data.mongodb.uri=mongodb+srv://Tamoghna:tamoghna1998@clusterrailwayreservati.glkzysl.mongodb.net/OnlineRailway?retryWrites=true&w=majority
+spring.data.mongodb.database=OnlineRailway
+
+bezkoder.app.jwtSecret= SecretKey
+bezkoder.app.jwtExpirationMs= 86400000
+
+spring.main.allow-bean-definition-overriding=true
