@@ -80,9 +80,9 @@ public class BookingController {
 	}
 	
 	@GetMapping("/showTicket/{pnr}")
-	public Booking getBookedTicket(@PathVariable("pnr") String pnr) {
-		Booking book =repository.findPnr(pnr);
-		return book;
+	public Booking getBookedTicket(@PathVariable("pnr") int pnr) {
+		
+		return null;
 	}
 	
 //	

@@ -15,7 +15,7 @@ public interface BookingRepository extends MongoRepository<Booking, Integer> {
 	List<Booking> findByBooking(String userId);
 	
 	@Query("{pnr: ?0}")
-	Booking findPnr(String pnr);
+	List<Booking> findPnr(String pnr);
 
 //	@Query("{train_name: /?0/}")
 //	List<Train> trainName(String name);
