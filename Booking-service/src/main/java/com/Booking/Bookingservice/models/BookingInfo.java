@@ -1,6 +1,6 @@
 package com.Booking.Bookingservice.models;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -11,6 +11,7 @@ public class BookingInfo {
 	@Id
 	private String id;
 	private String pnr;
+	private String train_name;
 	private int train_no;
 	private String from_station;
 	private String to_station;
@@ -18,15 +19,16 @@ public class BookingInfo {
 	private String quota;
 	private String status;
 	private int no_of_seats;
-	private Timestamp time;
+	private Date time;
 	public BookingInfo() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public BookingInfo(String pnr, int train_no, String from_station, String to_station, String clas, String quota,
-			String status, int no_of_seats, Timestamp time) {
+	public BookingInfo(String pnr, String train_name, int train_no, String from_station, String to_station, String clas,
+			String quota, String status, int no_of_seats, Date time) {
 		super();
 		this.pnr = pnr;
+		this.train_name = train_name;
 		this.train_no = train_no;
 		this.from_station = from_station;
 		this.to_station = to_station;
@@ -47,6 +49,12 @@ public class BookingInfo {
 	}
 	public void setPnr(String pnr) {
 		this.pnr = pnr;
+	}
+	public String getTrain_name() {
+		return train_name;
+	}
+	public void setTrain_name(String train_name) {
+		this.train_name = train_name;
 	}
 	public int getTrain_no() {
 		return train_no;
@@ -90,12 +98,14 @@ public class BookingInfo {
 	public void setNo_of_seats(int no_of_seats) {
 		this.no_of_seats = no_of_seats;
 	}
-	public Timestamp getTime() {
+	public Date getTime() {
 		return time;
 	}
-	public void setTime(Timestamp time) {
+	public void setTime(Date time) {
 		this.time = time;
 	}
+
+	
 	
 	
 }

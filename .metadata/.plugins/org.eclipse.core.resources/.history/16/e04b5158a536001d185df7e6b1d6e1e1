@@ -1,0 +1,16 @@
+package com.Booking.Bookingservice.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+
+import com.Booking.Bookingservice.models.Booking;
+
+public interface BookingRepository extends MongoRepository<Booking, Integer> {
+
+	@Query("{id: ?0}")
+	List<Booking> findBooking(String id);
+
+	List<Booking> findByName(String id);
+}
