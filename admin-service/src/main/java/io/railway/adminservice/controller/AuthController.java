@@ -64,7 +64,7 @@ public class AuthController {
 		// Create new user's account
 		Admin admin = new Admin(signUpRequest.getUsername(), signUpRequest.getEmail(),
 				encoder.encode(signUpRequest.getPassword()),signUpRequest.getName());
-
+ admin.setRole("ADMIN");
 		adminRepository.save(admin);
 		return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
 

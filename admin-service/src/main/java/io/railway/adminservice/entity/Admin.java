@@ -13,6 +13,7 @@ public class Admin {
 	private String email;
 	private String password;
 	private String name;
+	private String role ;
 
 	public Admin() {
 
@@ -64,6 +65,14 @@ public class Admin {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 	

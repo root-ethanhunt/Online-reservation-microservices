@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Vikash\Downloads\online railway Case Study\Authentication"/>
+			<item value="C:\Users\Vikash\Downloads\online railway Case Study\userAuthentication"/>
+			<item value="C:\Users\Vikash\Downloads\online railway Case Study\admin-service"/>
 			<item value="C:\Users\Vikash\Downloads\online railway Case Study"/>
 		</list>
 		<list key="projectNameTemplate">
